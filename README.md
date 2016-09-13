@@ -1,7 +1,12 @@
 # React Babel Plugins
 
+## Overview
+
+We'll explain what Babel does and how to use it for React development. 
+
 ## Objectives
-1. Explain how to find Babel plugins
+1. Define and describe the benefits of using Babel plugins
+2. Find Babel plugins and install them
 2. Describe a few useful plugins for React development
 
 ## Babel recap
