@@ -12,10 +12,10 @@ We'll explain what Babel does and how to use it for React development.
 ## Babel recap
 Babel is used to transform our ES2015 (and even newer) code to ES5 — the previous version of JavaScript that all browsers know and understand. Most of the ES2015 features are already present in browsers, but it's best to transpile your code using Babel anyway.
 
-This ensures that _every_ browser can run your code, as well as giving you the possibility of writing even more modern code (using features that haven't been released yet). Babel, installed by itself, does _nothing_ to your code. It only starts transforming your code once you tell it which plugins to use.
+This ensures that _every_ browser can run your code and gives you the possibility of writing even more modern code (using features that haven't been released yet). Babel, installed by itself, does _nothing_ to your code. It only starts transforming your code once you tell it which plugins to use.
 
 ## Plugins?
-Plugins are small, composable dependencies that transform parts of our code. These plugins get applied to the code when compiling it with Babel, each doing their own little job and changing our code. For example, the `transform-es2015-destructuring` allows us to use ES2015 destructuring in our code:
+Plugins are small, composable dependencies that transform parts of our code. These plugins get applied to the code when compiling it with Babel, each doing its own little job and changing our code. For example, the `transform-es2015-destructuring` allows us to use ES2015 destructuring in our code:
 
 ```js
 // Source code
@@ -30,7 +30,7 @@ var bar = _myLib.bar;
 Having small, separate plugins like this allows us to tweak our configuration to our heart's desire. However, installing every single plugin just to write ES2015 and React code seems like such a hassle... Luckily, there's a thing in Babel called plugin presets! These dependencies are basically a collection of plugins that are grouped together. For example, to transform the code we're writing in this course, we use `babel-preset-es2015` and `babel-preset-react`. Of course, if we want to add additional plugins, we can do so without any restriction!
 
 ## Using plugins and presets
-Now that we know how plugins and presets work, let's take a look at how tell Babel to actually use them. We install them using `npm`, and then we use a file called `.babelrc` in the root of our project to configure Babel:
+Now that we know how plugins and presets work, let's take a look at how to tell Babel to actually use them. We install them using `npm`, and then we use a file called `.babelrc` in the root of our project to configure Babel:
 
 ```json
 {
@@ -64,3 +64,5 @@ Using the [`babel-plugin-transform-class-properties`](http://babeljs.io/docs/plu
 
 ## Resources
 - [Babel: Plugins](http://babeljs.io/docs/plugins/)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-babel-plugins'>Babel Plugins</a> on Learn.co and start learning to code for free.</p>
